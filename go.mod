@@ -19,7 +19,9 @@ require (
 	k8s.io/kubernetes v1.18.1
 )
 
-replace github.com/Portshift/kubei => github.com/akpsgit/kubei master
+replace github.com/Portshift/kubei => /home/ak/go/src/github.com/Portshift/kubei
+
+replace github.com/Portshift/klar => /home/ak/go/src/github.com/Portshift/klar
 
 // kubernetes v1.18.1
 replace (

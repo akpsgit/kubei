@@ -3,7 +3,7 @@ package scanner
 import (
 	"context"
 	"fmt"
-	klar "github.com/Portshift/klar/kubernetes"
+	klar "github.com/Portshift/klar/docker/token/secret"
 	"github.com/Portshift/kubei/pkg/config"
 	"github.com/Portshift/kubei/pkg/utils/k8s"
 	"github.com/Portshift/kubei/pkg/utils/proxyconfig"
@@ -386,7 +386,7 @@ func (s *Scanner) createJob(data *scanData) (*batchv1.Job, error) {
 					Labels:      labels,
 				},
 				Spec: corev1.PodSpec{
-					Containers:    []corev1.Container{
+					Containers: []corev1.Container{
 						s.createVulnerabilitiesScannerContainer(data.imageName, podContext.imagePullSecret, data.scanUUID),
 					},
 					RestartPolicy: corev1.RestartPolicyNever,
