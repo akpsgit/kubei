@@ -8,6 +8,8 @@ It provides a graphical UI which allows the viewer to identify where and what sh
 
 
 ## Prerequisites 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fakpsgit%2Fkubei.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fakpsgit%2Fkubei?ref=badge_shield)
+
 
 1. A Kubernetes cluster is ready, and kubeconfig ( `~/.kube/config`) is properly configured for the target cluster.
 
@@ -115,3 +117,7 @@ Note:
 1. Supports Kubernetes Image Manifest V 2, Schema 2 (https://docs.docker.com/registry/spec/manifest-v2-2/). It will fail to scan on earlier versions.
  
 2. The CVE database will update once a day.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fakpsgit%2Fkubei.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fakpsgit%2Fkubei?ref=badge_large)
